@@ -1,0 +1,285 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>segunda aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/app3.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/ubi.jpg','imagenes/albergues.jpg','imagenes/erupcionca.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>Informacion del Volcan Popocatepetl </h1>
+  </div>
+<div>
+<!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow.html" style="width:40%;height:33%;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+
+
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-"b">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>UBICACION</h2>
+<p>Toca para ver la Información</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>TAMAÑO</h2>
+<p>Toca para ver la Información</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>ANTIGÜEDAD</h2>
+<p>Toca para ver la Información</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>HISTORIA</h2>
+<p>Toca para ver la Información</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>ACTIVIDAD VOLCANICA</h2>
+<p>Toca para ver la Información</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>MEDIDAS PREVENTIVAS</h2>
+<p>Toca para ver la Información</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>ZONAS DE RIESGOS</h2>
+<p>Toca para ver la Información</p>
+</a>
+</li>
+</ul>
+</div>
+  <div data-role="footer" align="center" data-theme="a">
+  <div>
+  <img src="imagenes/volcan.jpg" width="46" height="46">
+  </div>
+  <div>
+  <h4>Aplicacion tres</h4>
+  <h4>Wendy Karina Rivera Martinez</h4>
+  </div>
+ </div>
+ </div>
+ 
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>Ubicacion</h1>
+  </div>
+  <div data-role="content" align="center">
+  <div>
+   <p>El Popocatépetl  es un volcán activo localizado en el centro de México, en los límites territoriales de los estados de Morelos, Puebla y México. Se localiza a unos 72 km al sureste de la Ciudad de México, 43 km de Puebla, 63 km de Cuernavaca, y 53 km de Tlaxcala.</p>
+   <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image21','','imagenes/ubi.jpg',1)"><img src="imagenes/Popo.JPG" width="500" height="500" id="Image21"></a>
+   </div>
+   </div>
+   <div data-role="footer" data-theme="a" data-position="fixed">
+    <h4>Aplicacion tres, WKRM</h4>
+    </div>
+    </div>
+    </div>
+    
+    <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>Tamaño</h1>
+     </div>
+     <div data-role="content" align="center">
+      <div>
+        <p>Tiene una forma cónica simétrica y está unido por la parte norte con el Iztaccíhuatl mediante un paso montañoso conocido como Paso de Cortés. El volcán tiene glaciares perennes cerca de la boca del cono, en la punta de la montaña. Es el segundo volcán más alto de México, con una altitud máxima de 5500 metros sobre el nivel del mar, sólo después del Citlaltépetl de 5610 msnm.</p>
+          <img src="imagenes/popo2.jpg" width="90%" height="50%">
+        </div>
+       </div>
+       <div data-role="footer" data-theme="a" data-position="fixed">
+       <h4>Aplicacion tres, WKRM</h4>
+       </div>
+       </div>
+       </div>
+
+      
+    <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>ANTIGÜEDAD</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<p>El Popocatépetl es un volcán geológicamente joven. Se cree que tiene unos 730,000 años de antigüedad y que es remanente de volcanes antiguos que colapsaron. Su historia comenzó con la formación del volcán Nexpayantla a través de la expulsión de flujos de lava andesítica y dacítica. Años después, este volcán colapsó y en consecuencia se formó una caldera, es decir, una depresión amplia y profunda debajo de la cual se halla una cámara de magma.
+El cono de un nuevo volcán, Ventorrillo, emergió entonces, pero este experimentó un colapso hace aproximadamente 23,000 años..</p>
+<img src="imagenes/anti.jpg" width="50%" height="50%">
+<p> Posteriormente empezó a emerger el volcán El Fraile, pero al cabo de un tiempo terminó por colapsar también debido a una fuerte erupción, tras lo cual el lado sur del cono quedó destruido.
+El moderno Popocatépetl tuvo su origen durante el Pleistoceno tardío-Holoceno, después del derrumbe de El Fraile. El cono perteneciente a Don Goyo se formó paulatinamente hasta adquirir un tamaño significativo, pero produjo una fuerte erupción que hizo colapsar un lateral del cono y generar una avalancha de depósitos que cubrió la superficie. Al menos 4 avalanchas subsecuentes contribuyeron a formar el moderno cono.</p>
+<img src="imagenes/antig.jpg" width="50%" height="50%">
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion tres, WKRM</h4>
+</div>
+</div>
+</div>
+       
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>Historia</h1>
+  </div>
+  <div data-role="content" align="center">
+   <div>
+   <p> La historia cuenta el gran amor entre un guerrero llamado Popocatépetl y una princesa tlaxcaltelca de nombre Iztaccíhuatl, que desde tiempos prehispánicos permanecen juntos, uno frente a otro.
+Los aztecas dominaban el Valle de México, cuando el cacique de Tlaxcala decidió pelear por la libertad de su pueblo, lo que originó una guerra entre aztecas y tlaxcaltecas.
+La hija del cacique de Tlaxcala, la princesa Iztaccíhuatl, estaba enamorada del joven Popocatépetl, uno de los principales guerreros de este pueblo.
+Antes de ir a la guerra, el joven pidió la mano de la princesa en matrimonio. El cacique de Tlaxcala aceptaría sólo si el guerrero regresaba victorioso, asimismo, prometió recibirlo con el festín del triunfo y el lecho de su amor.</p>
+     <img src="imagenes/historia.jpg" width="50%" height="50%">
+    <p> Durante la guerra, un rival de Popocatépetl inventó que este había muerto en combate, al enterarse, la princesa Iztaccíhuatl lloró la muerte de su amado, se dice que su pena era tan grande que murió de tristeza.
+Popocatépetl, sin saber de la trágica muerte de su amada, venció en todos los combates y regresó triunfante a casa, donde recibió la terrible noticia. Desconsolado, el hombre tomó el cadáver de su princesa y lo cargó hasta la cima de una montaña.
+El joven guerrero le dio un beso póstumo a la princesa, tomó una antorcha humeante y se arrodilló en la montaña de enfrente a la de su amada, para velar así, su sueño eterno.
+Con el tiempo la nieve cubrió sus cuerpos, convirtiéndose en dos enormes volcanes. Fue de esta manera que la joven pareja quedó formalmente unida bajo la tutela de los dioses.</P>
+    </div>
+       <img src="imagenes/histo.png" width="50%" height="50%">
+      <p> La leyenda dice que cuando el Popocatépetl se acuerda del amor hacia su princesa, el volcán tiembla y arde de amor.
+ Por ello, dicen, hasta hoy en día el volcán Popocatépetl continúa arrojando fumarolas.</p>
+
+  </div>
+  <div data-role="footer" data-theme="a" data-position="fixed">
+     <h4>Aplicacion tres, WKRM</h4>
+  </div>              
+</div>
+</div>
+
+     
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>Actividad volcanica</h1>
+  </div>
+  <div data-role="content" align="center">
+   <div>
+   <img src="imagenes/acvol.jpg" width="90%" height="50%">
+    <br>
+    <br>
+     <img src="imagenes/act.jpg" width="90%" height="30%">
+    <p> Ante la actividad del volcán Popocatépetl, la Secretaría de Gobernación apoyada por diversas instituciones científicas desarrolló un sistema de alertamiento para determinar en qué momento la población y las autoridades de Protección Civil deberán activar las acciones correspondientes de prevención y auxilio.
+Este documento traduce dicho sistema en el semáforo de alerta volcánica y expone su funcionamiento para lograr limitar las pérdidas de todo tipo, a través de una mayor efectividad en las acciones de Protección Civil.</P>
+    </div>
+      <img src="imagenes/actividad.jpg" width="90%" height="50%">
+      <h4> MONITOREO </h4>
+      <p> Para poder verl el monitoreo del volcan puedes entrar a este enlace: </p>
+      <a href="https://sites.google.com/site/desastresnaturalessuapt/volcanes-internacionales-y-nacionales/volcanes-mexico"> Dar clic aquí para ir ver el MONITOREO </a>
+  </div>
+  <div data-role="footer" data-theme="a" data-position="fixed">
+     <h4>Aplicacion tres, WKRM</h4>
+  </div>              
+</div>
+</div>
+
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>Medidad Preventivas</h1>
+  </div>
+  <div data-role="content" >
+   <div>
+     <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+      <h1>Caida de ceniza</h1>
+      <div>
+      <ul> 
+      <li> No humedecer la ceniza a fin de evitar taponamientos en el sistema de alcantarillado</li>
+      <li> Utiliza medios electrónicos y de comunicación para obtener información confiable que den las autoridades de Protección Civil sobre la caída de ceniza y atiende siempre sus instrucciones.</li>
+      <li> No realices actividades al aire libre y si es posible no salgas.</li>
+      <li> Cierra puertas y ventanas y coloca toallas o trapos húmedos en las rendijas.</li>
+      <li> Si tienes que salir cúbrete con un pañuelo o tapabocas, limpia ojos y garganta con agua pura.</li>
+      <li> Para los ojos, usa lentes protectores, especialmente si usas lentes de contacto.</li>
+      <li> La ceniza volcánica puede ser resbaladiza, sobre todo cuando está mojada. Toma las precauciones necesarias.</li>
+      <li> Barre y retira la ceniza de techos, azoteas, patios y calles, deposítalas en bolsas y no permitas que se vaya al drenaje. </li>
+      <li> Si es posible no conduzcas, si tienes que hacerlo, hazlo a baja velocidad y con las luces encendidas, ya que la ceniza dificulta la visibilidad y provoca que el pavimento se vuelva resbaloso.</li>
+      </ul>
+      <br>
+      </div>
+      <div>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','imagenes/albergues.jpg',1)"><img src="imagenes/ceniza.jpg" width="650" height="420" id="Image13"></a> </div>
+     </div>
+     </div>
+
+<div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+      <h1>Erupcion</h1>
+      <div>
+      <ul>
+      <li> Si vives cerca de un volcán activo, prepara un kit de emergencia que incluya gafas de seguridad, una máscara, una linterna y una radio en buen estado que funcione con pilas.</li>
+      <li>Elabora una ruta de evacuación y ten el depósito de gasolina del coche siempre lleno.</li>
+      <li>	Evacua siguiendo las recomendaciones de las autoridades para no encontrarte lava y barro, así como rocas y escombros que puede arrojar el volcán.</li>
+      <li> Antes de abandonar tu casa, ponte una camisa de manga larga y pantalones largos; usa gafas de seguridad o normales, sin lentillas. Ponte una máscara de emergencia o envuélvete la cara con un paño húmedo.</li>
+      <li> Si no vas a evacuar, cierra puertas y ventanas, y bloquea la chimenea y otros puntos de ventilación para evitar que la ceniza entre en la casa.</li>
+      </ul>
+      <br>
+      </div>
+      <div>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image14','','imagenes/erupcionca.jpg',1)"><img src="imagenes/erupcion.jpg" width="595" height="447" id="Image14"></a> </div>
+     </div>
+     </div>
+
+    </div>
+   </div>
+  <div data-role="footer" data-theme="a" data-position="fixed">
+     <h4>Aplicacion tres, WKRM</h4>
+    </div>              
+ </div>
+</div>
+
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>Zonas de riesgo</h1>
+  </div>
+  <div data-role="content" align="center">
+   <div>
+     <img src="imagenes/zonass.jpg" width="50%" height="50%">
+    <p> Existe la remota posibildad de que una parte del Popocatépetl se desplome causando un gran derrumbe. Este se desplazaría a gran velocidad ( alrededor de 100 km/hr ) hasta una distancia máxima de aproximadamente 80 kilómetros destruyendo todo a su paso. Durante los últimos 40,000 años se produjeron 2 grandes derrumbes hacia el sur del volcán cubriendo áreas extensas. Si ocurriera otro evento de este tipo probablemente se dirigiría también hacia el sur. Generalmente grandes deformaciones susceptibles de ser observadas preceden a estos colapsos. Una erupción grande o un derrumbe gigante estaría acompañado de flujos de lodo e inundaciones de gran alcance. Estos viajaran distancias del orden de decenas de kilómetros por las barrancas que descienden del Popocatépetl.</P>
+    </div>
+      <img src="imagenes/zonas.jpg" width="50%" height="50%">
+   </div>
+  <div data-role="footer" data-theme="a" data-position="fixed">
+     <h4>Aplicacion tres, WKRM</h4>
+    </div>              
+ </div>
+</div>
+ 
+</body>
+</html>
